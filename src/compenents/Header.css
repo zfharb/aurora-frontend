@@ -1,0 +1,14 @@
+.header {
+    border: 5px solid black;
+    background-image: url("../images/persepolis.webp");
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-color: lightblue;
+    background-blend-mode: multiply;
+    background-size: 100%;
+    width: 80vw;
+    height: 30vw;    
+    margin: 7px;
+    padding: 70px;
+}
