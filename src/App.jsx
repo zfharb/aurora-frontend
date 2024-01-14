@@ -31,12 +31,6 @@ function App() {
       <Route path="/register" element={<Register/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
-
-
-      {/* <Route path="/register" element={<Register/>}/> */}
-
-      {/* <Route path="/" element={<Register/>}/> */}
-
     
       {/* <div className='container'>
         <div className='button-container'>
