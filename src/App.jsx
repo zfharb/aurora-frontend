@@ -1,23 +1,44 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import Header from './compenents/Header'
-import LoginModal from './compenents/LoginModal'
-import RegisterModal from './compenents/RegisterModal'
-import Search from './compenents/Search'
+import Home from './compenents/Home'
+import Login from './compenents/Login'
+import Register from './compenents/Register'
+import NotFound from './compenents/NotFound'
+import {Link, Route, Routes} from "react-router-dom"
 
 import './App.css'
 
 function App() {
-  const [seen, setSeen] = useState(false)
+  // const [seen, setSeen] = useState(false)
 
-  function togglePop () {
-      setSeen(!seen);
-  };
+  // function togglePop () {
+  //     setSeen(!seen);
+  // };
 
   return (
     <>
-      <div className='container'>
+      <div className='nav-links-container'>
+        <nav>
+          <Link to="/">Home</Link>&nbsp;
+          <Link to="/login">Login</Link>&nbsp;
+          <Link to="/register">Register</Link>&nbsp;
+        </nav>
+      </div>
+    
+
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/register" element={<Register/>}/>
+      <Route path="*" element={<NotFound/>}/>
+    </Routes>
+
+
+      {/* <Route path="/register" element={<Register/>}/> */}
+
+      {/* <Route path="/" element={<Register/>}/> */}
+
+    
+      {/* <div className='container'>
         <div className='button-container'>
         <button className='button' title="Login" onClick={togglePop}> Login </button>
             {seen ? <LoginModal toggle={togglePop} /> : null}
@@ -32,13 +53,13 @@ function App() {
 
 
 
-      <Header/>
+      <Home/>
       <Search/>
      &nbsp;
-     &nbsp;
+     &nbsp; */}
 
-    </>
     
+    </>
     
   )
 }
