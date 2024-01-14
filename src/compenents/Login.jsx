@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
 
 import './Login.css'
 
 function Login(props) {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+
+    const navigate = useNavigate();
 
     function handleLogin(e) {
         e.preventDefault()
@@ -44,8 +47,9 @@ function Login(props) {
         
             
             <button type="submit">Login</button>
-            <button onClick={props.toggle}>Close</button>
-        
+            <button onClick={() => navigate("/")}>Close</button>
+            {/* <button onClick={props.toggle}>Close</button> */}
+
         </div>
     )
 }
