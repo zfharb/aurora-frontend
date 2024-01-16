@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-import './Login.css'
+import styles from './Login.module.css'
 
 function Login(props) {
     const [username, setUsername] = useState('')
@@ -17,23 +17,39 @@ function Login(props) {
     }
 
     return (
-        <div className="popup">
-            
-            <label className="label">
-                    Username:
-                    <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
-            </label>
-            <label className="label">
-                    Password:
-                    <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
-            </label>
-        
-            
-            <button type="submit">Login</button>
-            <button onClick={() => navigate("/")}>Close</button>
+        <section className={styles.section}>
+                <div>
 
+                        <label className={styles.label}>
+                                usernmae: 
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <input type="text" onChange={e => setUsername(e.target.value)} />
+                        </label>
+                </div>
+                <div>
+                        <label className={styles.label}>
+                                password:
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <input type="text"  onChange={e => setPassword(e.target.value)} />
+                        </label>
+                </div>           
+                
+                <div>
+                        <button className={styles.button} type="submit" >register</button>
+                        &nbsp;
+                        <button className={styles.button} onClick={() => navigate("/")}>Close</button>
 
-        </div>
+                </div>        
+        </section>
+
     )
 }
 

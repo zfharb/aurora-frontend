@@ -54,7 +54,7 @@ function Register(props) {
                                 &nbsp;
                                 &nbsp;
                                 &nbsp;
-                                <input type="text" value={name} onChange={e => setName(e.target.value)} />
+                                <input type="text" onChange={e => setName(e.target.value)} />
                         </label>
                 </div>
                 <div>
@@ -65,27 +65,27 @@ function Register(props) {
                                 &nbsp;
                                 &nbsp;
                                 &nbsp;
-                                <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
+                                <input type="text" onChange={e => setEmail(e.target.value)} />
                         </label>
                 </div>           
                 <div>
                         <label className={styles.label}>
                                 username:
                                 &nbsp;
-                                <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
+                                <input type="text" onChange={e => setUsername(e.target.value)} />
                         </label>
                 </div>
                 <div>
                         <label className={styles.label}>
                                 password:
                                 &nbsp;
-                                <input type="text" value={password} onChange={e => setPassword(e.target.value)} />
+                                <input type="text" onChange={e => setPassword(e.target.value)} />
                         </label>
                 </div>
                 <div>
-                        <button type="submit"  onClick={registerUser}>register</button>
+                        <button className={styles.button} type="submit"  onClick={registerUser}>register</button>
                         &nbsp;
-                        <button onClick={() => navigate("/")}>Close</button>
+                        <button className={styles.button} onClick={() => navigate("/")}>Close</button>
 
                 </div>        
         </section>
