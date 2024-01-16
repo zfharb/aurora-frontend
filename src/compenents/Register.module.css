@@ -1,13 +1,10 @@
-.container{
-    width: 500px;
+.section{
+    /* border: 20px solid red; */
+    height:100%;
+    width: 100%;
+  }
 
+.label {
+     width: 50vw;
+    height: 50px;
 }
-
-.label{
-    /* width: 200px; */
-    /* height: 50px; */
-    /* white-space: nowrap;
-    
-    overflow :visible; */
-
-} 

@@ -1,0 +1,12 @@
+
+section{
+  /* border: 10px solid gray; */
+  display:grid;
+  height:100%;
+  width:100%;
+
+}
+
+ section > div {
+  text-align: center;
+}  

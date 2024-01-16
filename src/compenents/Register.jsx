@@ -4,11 +4,13 @@ import styles from './Register.module.css'
 
 
 function Register(props) {
-    const [firstName, setFirstName] = useState('')
-    const [lastName, setLastName] = useState('')
+    const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+
+    const [userData, setUserData] = useState([]);
+
 
     const navigate = useNavigate();
 
@@ -18,55 +20,77 @@ function Register(props) {
         props.toggle()
     }
 
-    return (
-        <div className={styles.container}>
-            <label className={styles.label}>
-                    first name: 
-                    &nbsp;
-                    <input type="password" value={firstName} onChange={e => setFirstName(e.target.value)} />
-            </label>
-            <br/>
-            &nbsp;
-            <label className={styles.label}>
-                    last name:
-                    &nbsp;
-                    <input type="password" value={lastName} onChange={e => setLastName(e.target.value)} />
-            </label>
-            <br/>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <label className={styles.label}>
-                    email:
-                    &nbsp;
-                    <input type="password" value={email} onChange={e => setEmail(e.target.value)} />
-            </label>
-            <br/>
-            &nbsp;
-            <label className={styles.label}>
-                    username:
-                    &nbsp;
-                    <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
-            </label>
-            <br/>
-            &nbsp;
-            <label className={styles.label}>
-                    password:
-                    &nbsp;
-                    <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
-            </label>
-            <br/>
-            &nbsp;
-            <button type="submit">Login</button>
-            &nbsp;
-            
-            <button onClick={() => navigate("/")}>Close</button>
+    const registerUser = async () => {
+        var targetUrl ='https://j7gerpuqm8.execute-api.us-east-1.amazonaws.com/dev/register'
+        const res= await fetch(targetUrl,{
+                mode:  'no-cors' ,
+                method: 'POST',
+                headers: {
+                        'Content-Type': "application/json; charset=utf-8",
+                },
+                body: JSON.stringify({
+                        "name":name,
+                        "email":email,
+                        "username":username,
+                        "password":password
+                })
+        })
+        .then(response => console.log(typeof response))
+        .catch(error =>{
+                console.log(error)
+            })
+        //     setUserData(['res']);
+    }
 
-            {/* <button onClick={props.toggle}>Close</button> */}
+    return (
+       
+        <section className={styles.section}>
+                <div>
+
+                        <label className={styles.label}>
+                                name: 
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <input type="text" value={name} onChange={e => setName(e.target.value)} />
+                        </label>
+                </div>
+                <div>
+                        <label className={styles.label}>
+                                email:
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
+                        </label>
+                </div>           
+                <div>
+                        <label className={styles.label}>
+                                username:
+                                &nbsp;
+                                <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
+                        </label>
+                </div>
+                <div>
+                        <label className={styles.label}>
+                                password:
+                                &nbsp;
+                                <input type="text" value={password} onChange={e => setPassword(e.target.value)} />
+                        </label>
+                </div>
+                <div>
+                        <button type="submit"  onClick={registerUser}>register</button>
+                        &nbsp;
+                        <button onClick={() => navigate("/")}>Close</button>
+
+                </div>        
+        </section>
         
-        </div>
+
     )
 }
 

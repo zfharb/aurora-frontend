@@ -1,14 +1,19 @@
 .header {
     border: 5px solid black;
-    background-image: url("../images/persepolis.webp");
+    background-image: url("../images/aurora.jpg");
     background-size: cover;
     background-position: center;
-    background-size: cover;
     background-color: lightblue;
-    background-blend-mode: multiply;
     background-size: 100%;
-    width: 80vw;
+    width: 85vw;
     height: 30vw;    
     margin: 7px;
-    padding: 70px;
+    padding: 50px;
+    display: block;
 }
+
+
+img {
+    display: block;
+    margin: 0 auto;
+  }
