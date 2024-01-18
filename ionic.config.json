@@ -1,0 +1,7 @@
+{
+  "name": "aurora",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}

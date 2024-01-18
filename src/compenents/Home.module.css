@@ -1,15 +1,18 @@
 .header {
     border: 5px solid black;
     background-image: url("../images/aurora.jpg");
-    background-size: cover;
-    background-position: center;
-    background-color: lightblue;
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-color: lightblue; */
     background-size: 100%;
-    width: 85vw;
+    /* width: 85vw;
     height: 30vw;    
     margin: 7px;
-    padding: 50px;
+    padding: 50px; */
     display: block;
+    place-items: center;
+    height: 50vw;    
+
 }
 
 
