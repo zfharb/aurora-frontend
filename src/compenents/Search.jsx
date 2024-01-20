@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import './Search.css'
+// import './Search.css'
 
 function Search(props) {
     const [service, setService] = useState('')
@@ -13,7 +13,7 @@ function Search(props) {
     }
 
     return (
-        <div className="container">
+        <div className="position-absolute top-50 start-50 translate-middle">
                 <form onSubmit={handleSearch}>
                     <label>
                         Service:

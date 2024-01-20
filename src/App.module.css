@@ -1,14 +1,22 @@
 
+
+/* 
 section{
-  /* border: 10px solid gray; */
-  display:grid;
+  display:flex;
   height:100%;
   width:100%;
   margin-top: 100px;
+  opacity: 0.5;
 
+} */
 
-}
-
+/*
  section > div {
   text-align: center;
-}  
+} 
+*/ 
+/*
+Link {
+
+}
+*/

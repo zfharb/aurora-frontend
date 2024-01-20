@@ -6,8 +6,8 @@ function Home() {
 
   return (
     <>
-      <div className={styles.header}>
-      {/* <img src="assets/aurora.jpeg" alt="AURORA" width="500" height="333"/> */}
+      {/* <div className={styles.header}> */}
+      <div>
       </div>
       <Search/>
     </>
