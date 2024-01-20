@@ -2,17 +2,9 @@
   background-image: url("../src/images/ocean.avif");
   background-size: cover;
   min-height: 100vh;
-  /* min-width: 100ch; */
+  min-width: 100ch;
   position: relative;
-  /* margin: flex; */
-
-}
-
-#section2 {
-  background-image: url("../src/images/glass-pebbles.jpeg");
-  background-size: cover;
-  min-height: 100vh;
-  position: relative;
+  /* margin: flex;  */
 
 }
 

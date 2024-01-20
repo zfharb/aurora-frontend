@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import styles from './Register.module.css'
 
 
@@ -12,13 +12,13 @@ function Register(props) {
     const [userData, setUserData] = useState([]);
 
 
-    const navigate = useNavigate();
+//     const navigate = useNavigate();
 
-    function handleLogin(e) {
-        e.preventDefault()
-        // Code to handle login goes here
-        props.toggle()
-    }
+//     function handleLogin(e) {
+//         e.preventDefault()
+//         // Code to handle login goes here
+//         props.toggle()
+//     }
 
     const registerUser = async () => {
         var targetUrl ='https://j7gerpuqm8.execute-api.us-east-1.amazonaws.com/dev/register'
@@ -43,54 +43,35 @@ function Register(props) {
     }
 
     return (
-       
-        <section className={styles.section}>
-                <div>
 
-                        <label className={styles.label}>
-                                name: 
-                                &nbsp;
-                                &nbsp;
-                                &nbsp;
-                                &nbsp;
-                                &nbsp;
-                                <input type="text" onChange={e => setName(e.target.value)} />
-                        </label>
-                </div>
-                <div>
-                        <label className={styles.label}>
-                                email:
-                                &nbsp;
-                                &nbsp;
-                                &nbsp;
-                                &nbsp;
-                                &nbsp;
-                                <input type="text" onChange={e => setEmail(e.target.value)} />
-                        </label>
-                </div>           
-                <div>
-                        <label className={styles.label}>
-                                username:
-                                &nbsp;
-                                <input type="text" onChange={e => setUsername(e.target.value)} />
-                        </label>
-                </div>
-                <div>
-                        <label className={styles.label}>
-                                password:
-                                &nbsp;
-                                <input type="text" onChange={e => setPassword(e.target.value)} />
-                        </label>
-                </div>
-                <div>
-                        <button className={styles.button} type="submit"  onClick={registerUser}>register</button>
-                        &nbsp;
-                        <button className={styles.button} onClick={() => navigate("/")}>Close</button>
-
-                </div>        
-        </section>
         
+        <div data-bs-spy="scroll" data-bs-target={props.name}  class="container d-flex justify-content-center">
 
+        <form align="center">
+                <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">name</label>
+                <input type="name" class="form-control" id="exampleInputEmail1" onChange={e => setName(e.target.value)} />
+                </div>
+                <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">email</label>
+                <input type="email" class="form-control" id="exampleInputPassword1" onChange={e => setEmail(e.target.value)} />
+                </div>
+                <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">username</label>
+                <input type="username" class="form-control" id="exampleInputPassword1" onChange={e => setUsername(e.target.value)} />
+                </div>
+                <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" onChange={e => setPassword(e.target.value)} />
+                </div>
+              
+                <button type="submit" class="btn btn-primary" onClick={registerUser}>Register</button>
+
+        </form>
+        {name}
+        {email}
+        </div>
+       
     )
 }
 

@@ -6,10 +6,10 @@ function Home() {
 
   return (
     <>
-      {/* <div className={styles.header}> */}
-      <div>
-      </div>
-      <Search/>
+      {/* <nav id="navbar-example2" class="navbar navbar-light bg-light px-3"> */}
+
+      <Search />
+      {/* </nav> */}
     </>
 
    
