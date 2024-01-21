@@ -1,7 +1,0 @@
-#root {
-  background-image: url("../src/images/ocean.avif");
-  background-size: cover;
-  min-height: 100vh;
-  min-width: 100ch;
-  position: relative;
-}
