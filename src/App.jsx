@@ -9,7 +9,7 @@ import './App.css'
 function App() {
   return (
     <>
-   <div class=" container-fluid sticky-top navbar-custom">
+   <div class="container-fluid sticky-top navbar-custom">
       <div class="row">
         <div className='col'>
           <img src="../src/images/Remove.png" class='img-fluid w-50 p-3 align-self-start' alt="..."/>

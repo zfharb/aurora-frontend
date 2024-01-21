@@ -1,39 +1,5 @@
-/* .laurel {
-  background-image: url("../src/images/Remove.png");
-
-  background-color:transparent;
-  mix-blend-mode: multiply;
-
-  opacity: 1;
-  width: 40vmin;
-  height: 40vmin;
-} */
-
-/* 
-section{
-  display:flex;
-  height:100%;
-  width:100%;
-  margin-top: 100px;
-  opacity: 0.5;
-
-} */
-
-/*
- section > div {
-  text-align: center;
-} 
-*/ 
-/*
-Link {
-
-}
-*/
-
 
 .navbar-custom {
   background-color: lightblue;
   opacity: 0.5;
-  /* max-height: 20vh; */
-
 }
