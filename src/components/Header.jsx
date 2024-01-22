@@ -7,7 +7,7 @@ function Header() {
       <>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
       <div class="container">
-        <a class="navbar-brand text-black fs-1" href="#">MadinaX</a>
+        <a class="navbar-brand text-white fs-1" href="#">MadinaX</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -24,25 +24,25 @@ function Header() {
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-black" href="Home">Home</a>
+              <a class="nav-link text-white" href="Home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="#">About</a>
+              <a class="nav-link text-white" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="#">Blog</a>
+              <a class="nav-link text-white" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="#">Pricing</a>
+              <a class="nav-link text-white" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="#">Contact</a>
+              <a class="nav-link text-white" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="Register">Register</a>
+              <a class="nav-link text-white" href="Register">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="Login">Login</a>
+              <a class="nav-link text-white" href="Login">Login</a>
             </li>
           </ul>
         </div>

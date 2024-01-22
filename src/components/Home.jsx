@@ -6,7 +6,6 @@ function Home() {
 
   return (
     <>
-    <Header/>
       <div class="container-fluid no-padding px-0 ">
 
       <img src="../src/images/gold-coast.avif" class="img-fluid w-100" alt="AuStralia Gold Coast"/>
