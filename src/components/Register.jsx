@@ -33,9 +33,7 @@ function Register() {
 
     return (
         <>
-        <section class='register-bg-image'>
-
-        <Header/>
+        <section  class='register-bg-image'> 
         <div class="container d-flex justify-content-center min-vh-100 align-items-center">
                 <form>
                     <div class="mb-3">

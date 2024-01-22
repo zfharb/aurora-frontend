@@ -7,7 +7,7 @@ function Header() {
       <>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
       <div class="container">
-        <a class="navbar-brand text-black" href="#">MadinaX</a>
+        <a class="navbar-brand text-black fs-1" href="#">MadinaX</a>
         <button
           class="navbar-toggler"
           type="button"

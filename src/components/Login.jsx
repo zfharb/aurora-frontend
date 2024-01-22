@@ -13,8 +13,6 @@ function Login() {
     return (
         <>  
         <section class='login-bg-image'>
-                 
-            <Header/>
             <div class="container d-flex justify-content-center align-items-center">
                     <form >
                             <div class="mb-3">
@@ -29,7 +27,6 @@ function Login() {
                             <button type="submit" class="btn btn-primary" onClick={loginUser}>Login</button>
                     </form>
             </div>
-            {/* <img src="../src/images/ocean.png" class="container-fluid no-padding px-0 vh-100" alt="AuStralia Gold Coast"/> */}
         </section>
         </>
     )
