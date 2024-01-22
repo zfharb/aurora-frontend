@@ -2,11 +2,10 @@ import Home from './components/Home'
 import Login from './components/Login'
 import Register from './components/Register'
 import NotFound from './components/NotFound'
-// import Search from './components/Search'
+import Search from './components/Search'
 import {Route, Routes} from "react-router-dom"
 
 import './App.css'
-import Search from './components/Search'
 
 function App() {
   return (

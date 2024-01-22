@@ -1,3 +1,4 @@
+import Header from './Header'
 import { useState } from 'react'
 
 
@@ -29,8 +30,10 @@ function Register() {
     }
 
     return (
+        <>
+        <Header/>
         <div  class="container d-flex justify-content-center">
-            <form align="center">
+                <form align="center" class="w-25 mx-auto fixed-top">
                     <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">name</label>
                     <input type="name" class="form-control" id="exampleInputEmail1" onChange={e => setName(e.target.value)} />
@@ -50,8 +53,11 @@ function Register() {
                 
                     <button type="submit" class="btn btn-primary" onClick={registerUser}>Register</button>
 
-            </form>   
+                </form>   
         </div>
+        <img src="../src/images/ocean.png" class="container-fluid no-padding px-0 vh-100" alt="AuStralia Gold Coast"/>
+
+        </>
     
     )
 }
