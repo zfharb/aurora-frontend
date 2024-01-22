@@ -1,11 +1,25 @@
-import Register from './Register'
+import "./Header.css"
+import { useState, useEffect} from 'react'
 
 
 function Header() {
 
+  const [navShadow, setNavShadow] = useState('');
+  
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          setNavShadow('navbar-scrolled');
+        } else  if (window.scrollY < 100) {
+          setNavShadow('');
+
+        }
+    });
+}, [])
+ 
     return (
       <>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <nav class={`navbar fixed-top navbar-expand-lg navbar-dark p-md-3 ${navShadow}`}>
       <div class="container">
         <a class="navbar-brand text-white fs-1" href="#">MadinaX</a>
         <button
@@ -48,9 +62,7 @@ function Header() {
         </div>
       </div>
     </nav>
-  
-  
-      </>
+    </>
     )
   }
   
