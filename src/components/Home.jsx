@@ -1,5 +1,7 @@
 
-import image1 from '../images/gold-coast.avif';
+import goldCoast from '../images/gold-coast.avif'
+import dubai from '../images/burj-khalifa.webp'
+import newYork from '../images/nyc-street.webp' 
 
 
 function Home() {
@@ -8,19 +10,19 @@ function Home() {
     <>
       <div class="container-fluid no-padding px-0 ">
 
-      <img src={image1} class="img-fluid w-100" alt="AuStralia Gold Coast"/>
+      <img src={goldCoast} class="img-fluid w-100" alt="AuStralia Gold Coast"/>
       
       </div>
 
 
       <div class="container-fluid no-padding px-0 ">
-      <img src="../src/images/burj-khalifa.webp" class="img-fluid w-100" alt="AuStralia Gold Coast"/>
+      <img src={dubai} class="img-fluid w-100" alt="AuStralia Gold Coast"/>
         
         
       </div>
 
       <div class="container-fluid no-padding px-0 ">
-      <img src="../src/images/nyc-street.webp" class="img-fluid w-100" alt="New York"/>
+      <img src={newYork} class="img-fluid w-100" alt="New York"/>
         
         
       </div>
