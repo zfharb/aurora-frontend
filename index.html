@@ -8,17 +8,20 @@
     <title>MadinaX</title>
   </head>
   <body>
-    <div id="root" class="bg-image" 
-     style="background-image: url('../src/images/aurora.jpg');
-            background-size: cover;
-            height: 100vh; 
-            width: 100vw">
-    </div>
     
-
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-
+    <script>
+      var nav = document.querySelector('nav');
+      window.addEventListener('scroll', function() {
+        if(window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow')
+        } else {
+          nav.classList.remove('bg-dark', 'shadow')
+        }
+      })
+    </script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+import Header from './Header'
 import { useState } from 'react'
 
 function Login() {
@@ -8,6 +9,9 @@ function Login() {
     }
 
     return (
+        <>
+        <Header/>
+
         <div  class="container d-flex justify-content-center">
                 <form align="center">
                         <div class="mb-3">
@@ -22,6 +26,7 @@ function Login() {
                         <button type="submit" class="btn btn-primary" onClick={loginUser}>Login</button>
                 </form>
         </div>
+        </>
     )
 }
 
