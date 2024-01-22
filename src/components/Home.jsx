@@ -1,6 +1,6 @@
 
-import Header from "./Header"
-import Search from "./Search"
+import image1 from '../images/gold-coast.avif';
+
 
 function Home() {
 
@@ -8,7 +8,7 @@ function Home() {
     <>
       <div class="container-fluid no-padding px-0 ">
 
-      <img src="../src/images/gold-coast.avif" class="img-fluid w-100" alt="AuStralia Gold Coast"/>
+      <img src={image1} class="img-fluid w-100" alt="AuStralia Gold Coast"/>
       
       </div>
 
