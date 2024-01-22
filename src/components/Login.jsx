@@ -1,7 +1,7 @@
 import Header from './Header'
 import { useState } from 'react'
 
-
+import "./Login.css"
 
 function Login() {
     const [username, setUsername] = useState('')
@@ -11,10 +11,11 @@ function Login() {
     }
 
     return (
-        <>       
+        <>  
+        <section class='login-bg-image'>
+                 
             <Header/>
-            <div class="bg-image container d-flex justify-content-center min-vh-100 align-items-center"
-            styles="background-image: url('../src/images/ocean.png'); height: 100vh">
+            <div class="container d-flex justify-content-center align-items-center">
                     <form >
                             <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">usernmae</label>
@@ -29,7 +30,7 @@ function Login() {
                     </form>
             </div>
             {/* <img src="../src/images/ocean.png" class="container-fluid no-padding px-0 vh-100" alt="AuStralia Gold Coast"/> */}
-
+        </section>
         </>
     )
 }

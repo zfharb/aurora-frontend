@@ -1,0 +1,7 @@
+.register-bg-image {
+    background-image: url('../src/images/ocean.png');
+    display:flex;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
