@@ -38,7 +38,7 @@ function Header() {
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white" href="Home">Home</a>
+              <a class="nav-link text-white" href="/Home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">About</a>
@@ -53,10 +53,10 @@ function Header() {
               <a class="nav-link text-white" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="Register">Register</a>
+              <a class="nav-link text-white" href="/Register">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="Login">Login</a>
+              <a class="nav-link text-white" href="/Login">Login</a>
             </li>
           </ul>
         </div>
