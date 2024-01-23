@@ -36,19 +36,19 @@ function Register() {
         <div class="container d-flex justify-content-center min-vh-100 align-items-center">
                 <form>
                     <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">name</label>
+                    <label for="exampleInputEmail1" class="form-label"><h4>name</h4></label>
                     <input type="name" class="form-control" id="exampleInputEmail1" onChange={e => setName(e.target.value)} />
                     </div>
                     <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">email</label>
+                    <label for="exampleInputPassword1" class="form-label"><h4>email</h4></label>
                     <input type="email" class="form-control" id="exampleInputPassword1" onChange={e => setEmail(e.target.value)} />
                     </div>
                     <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">username</label>
+                    <label for="exampleInputPassword1" class="form-label"><h4>username</h4></label>
                     <input type="username" class="form-control" id="exampleInputPassword1" onChange={e => setUsername(e.target.value)} />
                     </div>
                     <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <label for="exampleInputPassword1" class="form-label"><h4>Password</h4></label>
                     <input type="password" class="form-control" id="exampleInputPassword1" onChange={e => setPassword(e.target.value)} />
                     </div>
                 
