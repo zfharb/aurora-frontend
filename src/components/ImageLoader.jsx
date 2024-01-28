@@ -3,15 +3,38 @@ import { useState } from 'react'
 import "./ImageLoader.css"
 
 function ImageLoader() {
-    const [username, setUsername] = useState('')
-    const [password, setPassword] = useState('')
+    const [selectedFile, setSelectedFile] = useState(null)
+    const [upLoadedSuccessfull, setUpLoadedSuccessfull] = useState(false)
 
-    function onFileChange(e) {
-        e.preventDefault()
+    function onFileChange(event) {
+        // event.preventDefault()
+        setSelectedFile(event.target.file)
+        console.log(event.target.file)
     }
 
-    function onFileUpload(e) {
-        e.preventDefault()
+    function onFileUpload(event) {
+        // event.preventDefault()
+        const formData = new FormData();
+        console.log(selectedFile)
+        formData.append(
+            "demo file",
+            selectedFile,
+            selectedFile.name
+        )
+        setSelectedFile(null)
+        setUpLoadedSuccessfull(true)
+    }
+
+    function fileData() {
+        if(selectedFile) {
+            <div>
+                <h2>file details:</h2>
+                <p>file name: {selectedFile.name}</p>
+                <p>file type: {selectedFile.type}</p>
+                <p>file name: {selectedFile.lastModified.toDateString()}</p>
+
+            </div>
+        }
     }
 
     return (
@@ -32,7 +55,11 @@ function ImageLoader() {
                 <div class="row justify-content-center">
                     <div class="col-3">
                         <input class="display-6 form-control text-white" type='file' onChange={onFileChange}/>
+                        <button onClick={onFileUpload} >
+                            Upload
+                        </button>
                     </div>
+                    {fileData()}
                 </div>
             </div>       
         </section>
