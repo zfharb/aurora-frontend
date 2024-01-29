@@ -27,6 +27,7 @@ function ImageUpLoad() {
             console.log('upload image failed');
             console.log(error)
             })
+            setFile('');
     }
 
 
