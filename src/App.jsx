@@ -3,7 +3,7 @@ import Login from './components/Login'
 import Register from './components/Register'
 import NotFound from './components/NotFound'
 import Search from './components/Search'
-import ImageLoader from './components/ImageLoader'
+import ImageUpLoad from './components/ImageUpLoad'
 import Header from './components/Header'
 
 import {Route, Routes} from "react-router-dom"
@@ -18,7 +18,7 @@ function App() {
     <Routes>
       <Route path="/" element={<><Home/></>}/>
       <Route path="/Home" element={<Home/>}/>
-      <Route path="/imageloader" element={<ImageLoader/>}/>
+      <Route path="/ImageUpLoad" element={<ImageUpLoad/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/register" element={<Register/>}/>
       <Route path="*" element={<NotFound/>}/>

@@ -53,7 +53,7 @@ function Header() {
               <a class="nav-link text-white" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/ImageLoader">my pictures</a>
+              <a class="nav-link text-white" href="/ImageUpLoad">my pictures</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Pricing</a>
