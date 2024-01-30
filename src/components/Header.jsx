@@ -1,5 +1,5 @@
-import "./Header.css"
 import { useState, useEffect} from 'react'
+import "./Header.css"
 
 
 function Header() {
@@ -15,34 +15,28 @@ function Header() {
 
         }
     });
-}, [])
+  }, [])
  
-    return (
-      <>
-       
-      <nav class={`navbar navbar-inverse fixed-top navbar-expand-lg navbar-dark p-md-3 ${navShadow}`}>
+  return (
+      <>       
+      <nav class={`navbar fixed-top navbar-expand-lg navbar-dark p-md-3 ${navShadow}`}>
       <div class="container-fluid">
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-
+       
         <a class="navbar-brand text-white fs-1" href="#">MadinaX</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mx-auto"></div>
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+          <ul class="navbar-nav position-absolute top-25 end-0">
             <li class="nav-item">
               <a class="nav-link text-white" href="/Home">Home</a>
             </li>
@@ -71,9 +65,10 @@ function Header() {
         </div>
       </div>
     </nav>
+    
     </>
     )
   }
   
-  export default Header
+export default Header
   
