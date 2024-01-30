@@ -18,10 +18,17 @@ function Header() {
   }, [])
  
   return (
-      <>       
+      <>
       <nav class={`navbar fixed-top navbar-expand-lg navbar-dark p-md-3 ${navShadow}`}>
       <div class="container-fluid">
-       
+        <br/>       
+        <br/>       
+        <br/>    
+        <br/>       
+        <br/>       
+        <br/>       
+        <br/>       
+          
         <a class="navbar-brand text-white fs-1" href="#">MadinaX</a>
         <button
           class="navbar-toggler"
