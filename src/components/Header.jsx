@@ -20,12 +20,12 @@ function Header() {
     return (
       <>
        
-      <nav class={`navbar fixed-top navbar-expand-lg navbar-dark p-md-3 ${navShadow}`}>
+      <nav class={`navbar navbar-inverse fixed-top navbar-expand-lg navbar-dark p-md-3 ${navShadow}`}>
       <div class="container-fluid">
-        {/* <br></br>
         <br></br>
         <br></br>
-        <br></br> */}
+        <br></br>
+        <br></br>
 
         <a class="navbar-brand text-white fs-1" href="#">MadinaX</a>
         <button
@@ -40,32 +40,7 @@ function Header() {
           <span class="navbar-toggler-icon"></span>
         </button>
 
-{/* //remove code */}
-      <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/home">Home</a></li>
-        {/* <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li> */}
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/Register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  
-
-{/* //remove code */}
-
-
-        {/* <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -93,7 +68,7 @@ function Header() {
               <a class="nav-link text-white" href="/Login">Login</a>
             </li>
           </ul>
-        </div> */}
+        </div>
       </div>
     </nav>
     </>
