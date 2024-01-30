@@ -39,8 +39,33 @@ function Header() {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+{/* //remove code */}
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/home">Home</a></li>
+        {/* <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li> */}
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/Register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
   
-        <div class="collapse navbar-collapse" id="navbarNav">
+
+{/* //remove code */}
+
+
+        {/* <div class="collapse navbar-collapse" id="navbarNav">
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -68,7 +93,7 @@ function Header() {
               <a class="nav-link text-white" href="/Login">Login</a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </nav>
     </>
