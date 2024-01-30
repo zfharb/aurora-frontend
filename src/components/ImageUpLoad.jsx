@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import "./ImageLoader.css"
+import "./ImageUpLoad.css"
 
 function ImageUpLoad() {
     const [file, setFile] = useState('sss')
@@ -31,12 +31,8 @@ function ImageUpLoad() {
             console.log(error)
             })
             setFile('');
+            setInputText('');   
     }
-
-    const renderAttachedFilePreview = () => {
-        return <div class="text-white">{file?.name}</div>;
-      };
-
 
     return (
         <>  
