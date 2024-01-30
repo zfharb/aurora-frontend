@@ -3,12 +3,15 @@ import { useState } from 'react'
 import "./ImageLoader.css"
 
 function ImageUpLoad() {
-    const [file, setFile] = useState('')
+    const [file, setFile] = useState('sss')
+    const [inputText, setInputText] = useState("");
 
     const handleFileChange = async (e) => {
         e.preventDefault();
         const file = e.target.files[0];
         setFile(file);
+        setInputText(e.target.value);   
+    
       };
 
     const uploadImage = async () => {
@@ -30,6 +33,10 @@ function ImageUpLoad() {
             setFile('');
     }
 
+    const renderAttachedFilePreview = () => {
+        return <div class="text-white">{file?.name}</div>;
+      };
+
 
     return (
         <>  
@@ -47,8 +54,12 @@ function ImageUpLoad() {
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-3 text-white">
-                        <input class="display-6 form-control text-white" type='file' onChange={handleFileChange}/>
+                    <div class="col-4 text-white">
+                        <input class="display-6 form-control text-black" 
+                               type='file' 
+                               onChange={handleFileChange}
+                               multiple
+                               value={inputText}/>
                         <button onClick={uploadImage} >
                             Upload
                         </button>
