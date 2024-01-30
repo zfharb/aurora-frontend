@@ -45,28 +45,28 @@ function Header() {
         <div class="collapse navbar-collapse"  id="navbarSupportedContent">
           <ul class="navbar-nav position-absolute top-25 end-0">
             <li class="nav-item">
-              <a class="nav-link text-white" href="/Home">Home</a>
+              <a class="nav-link text-white fw-bolder" href="/Home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">About</a>
+              <a class="nav-link text-white fw-bolder" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Blog</a>
+              <a class="nav-link text-white fw-bolder" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/ImageUpLoad">my pictures</a>
+              <a class="nav-link text-white fw-bolder" href="/ImageUpLoad">my pictures</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Pricing</a>
+              <a class="nav-link text-white fw-bolder" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact</a>
+              <a class="nav-link text-white fw-bolder" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/Register">Register</a>
+              <a class="nav-link text-white fw-bolder" href="/Register">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/Login">Login</a>
+              <a class="nav-link text-white fw-bolder" href="/Login">Login</a>
             </li>
           </ul>
         </div>
