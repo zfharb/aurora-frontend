@@ -29,7 +29,7 @@ function Header() {
         <br/>       
         <br/>       
           
-        <a class="navbar-brand text-white fs-1" href="#">MadinaX</a>
+        <a class="navbar-brand text-white fs-1" href="/">MadinaX</a>
         <button
           class="navbar-toggler"
           type="button"
