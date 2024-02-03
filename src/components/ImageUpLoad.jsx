@@ -1,20 +1,72 @@
 import { useState } from 'react'
+import axios from "axios";
 
 import "./ImageUpLoad.css"
 
 function ImageUpLoad() {
     const [file, setFile] = useState('sss')
     const [inputText, setInputText] = useState("");
+    // const [base64Image, setBase64Image] = useState("");
 
     const handleFileChange = async (e) => {
         e.preventDefault();
         const file = e.target.files[0];
+
         setFile(file);
         setInputText(e.target.value);   
     
-      };
+    };
 
-    const uploadImage = async () => {
+    // function encodeImageFileAsURL() {
+    //     var reader = new FileReader();
+    //     reader.onloadend = function() {
+    //       console.log('RESULT', reader.result)
+    //       setBase64Image(reader.result)
+    //     }
+    //     reader.readAsDataURL(file);
+    // }
+    
+
+    const uploadImage = async (event) => {
+        //////   using axios -- need to make it work
+
+        // console.log("login event--------")
+        // console.log(event)
+        // encodeImageFileAsURL();
+        // console.log(base64Image)
+        // console.log("login event--------")
+        // event.preventDefault();
+ 
+        //  await axios
+        //  .post(
+        //          "https://usycq00pk7.execute-api.us-east-1.amazonaws.com/dev/upload",
+        //          {
+        //             body: base64Image,
+        //          },
+        //          {
+        //             headers: {
+        //                 "Content-Type": "multipart/form-data"
+        //             }
+        //         }
+        //  )
+        //  .then((response) => {
+        //     console.log("Successfully uploaded image!")
+        //     console.log(response);
+        //     setFile('');
+        //     setInputText('');  
+ 
+        //  })
+        //  .catch((error) => {
+        //     console.log("Something went wrong!")
+        //     console.log(error);
+        //     setFile('');
+        //     setInputText('');  
+        //  });
+
+        ///////
+
+
+
         var targetUrl ='https://usycq00pk7.execute-api.us-east-1.amazonaws.com/dev/upload'
         await fetch(targetUrl,{
                 mode:  'no-cors' ,
