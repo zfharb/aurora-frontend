@@ -38,38 +38,6 @@ function Login() {
         });
 
     }
-    
-    // const loginUser = async () => {
-    //     var targetUrl ='https://usycq00pk7.execute-api.us-east-1.amazonaws.com/dev/login'
-    //     const res= await fetch(targetUrl,{
-    //             mode:  'no-cors' ,
-    //             method: 'POST',
-    //             headers: {"Content-Type": "application/json"},
-    //             body: JSON.stringify({
-    //                     "username":username,
-    //                     "password":password
-    //             })
-    //     })
-    //     .then(response => {
-    //         setResult(response);
-    //         console.log(response)
-    //         console.log('response')
-    //         console.log('response')
-    //         console.log('response')
-    //         console.log('response')
-
-    //         console.log(typeof response)
-    //     }
-    //         )
-    //     .catch(error =>{
-    //         console.log('error')
-    //         console.log('error')
-    //         console.log('error')
-
-    //         setResult(error);
-    //             console.log(error)
-    //         })
-    // }
 
     return (
         <>  
