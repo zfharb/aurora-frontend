@@ -1,7 +1,7 @@
 
-import goldCoast from '../images/gold-coast.avif'
-import dubai from '../images/burj-khalifa.webp'
-import newYork from '../images/nyc-street.webp' 
+import goldCoast from '../images/gold-coast.jpeg'
+import dubai from '../images/burj-khalifa.jpeg'
+import newYork from '../images/nyc-street.jpeg' 
 
 
 function Home() {

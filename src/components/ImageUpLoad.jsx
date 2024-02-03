@@ -15,7 +15,7 @@ function ImageUpLoad() {
       };
 
     const uploadImage = async () => {
-        var targetUrl ='https://fhssmqfybb.execute-api.us-east-1.amazonaws.com/dev/upload'
+        var targetUrl ='https://usycq00pk7.execute-api.us-east-1.amazonaws.com/dev/upload'
         await fetch(targetUrl,{
                 mode:  'no-cors' ,
                 method: 'POST',
