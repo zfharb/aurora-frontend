@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import axios from "axios";
-
-import "./Register.css"
+import ocean from '/src/images/ocean.jpeg'
 
 
 function Register() {
@@ -49,9 +48,18 @@ function Register() {
 
     return (
         <>
-        <section  class='register-bg-image'> 
-        <div class="container d-flex justify-content-center min-vh-100 align-items-center">
-                <form>
+      <div class="container-flex w-100 h-100 ">
+
+        <img class="z-n1 w-100 h-100 position-absolute"
+                src={ocean} 
+                style={{  
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat'
+                }}
+                 alt="...."/> 
+        <div class="z-0  position-absolute top-50 start-50 translate-middle">
+                <form class=" w-100 p-3 form-bg">
+
                     <div class="mb-3">
                     <label htmlFor="registerFormName" class="form-label"><h4>name</h4></label>
                     <input type="name" class="form-control" id="registerFormName" value={name} onChange={e => setName(e.target.value)} />
@@ -73,7 +81,7 @@ function Register() {
 
                 </form>   
         </div>
-        </section>
+        </div>
 
         </>
     

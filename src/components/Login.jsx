@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import axios from "axios";
+import burningMan from '/src/images/burning-man-1.jpeg'
 
-import "./Login.css"
 
 function Login() {
     const [username, setUsername] = useState('')
@@ -40,22 +40,30 @@ function Login() {
 
     return (
         <>  
-        <section class='login-bg-image'>
-            <div class="container d-flex justify-content-center align-items-center">
-                    <form >
-                            <div class="mb-3">
-                            <label class="form-label text-white"><h4>username</h4></label>
-                            <input type="username" class="form-control" value={username} onChange={e => setUsername(e.target.value)} />
-                            </div>
-                            <div class="mb-3">
-                            <label class="form-label text-white"><h4>password</h4></label>
-                            <input type="password" class="form-control" value={password} onChange={e => setPassword(e.target.value)} />
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary" onClick={loginUser}>Login</button>
-                    </form>
-            </div>
-        </section>
+        <div class="container-flex w-100 h-100 ">
+        <img class="z-n1 w-100 h-100 position-absolute"
+                src={burningMan} 
+                style={{  
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat'
+                }}
+                 alt="...."
+        /> 
+        <div class="z-0  position-absolute top-50 start-50 translate-middle">
+                <form >
+                        <div class="mb-3">
+                        <label class="form-label text-white"><h4>username</h4></label>
+                        <input type="username" class="form-control" value={username} onChange={e => setUsername(e.target.value)} />
+                        </div>
+                        <div class="mb-3">
+                        <label class="form-label text-white"><h4>password</h4></label>
+                        <input type="password" class="form-control" value={password} onChange={e => setPassword(e.target.value)} />
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" onClick={loginUser}>Login</button>
+                </form>
+        </div>
+        </div>
         </>
     )
 }

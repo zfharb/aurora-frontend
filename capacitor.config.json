@@ -1,8 +1,19 @@
 {
   "appId": "com.madinax.app",
-  "appName": "aurora",
+  "appName": "MadinaX",
   "webDir": "dist",
   "server": {
     "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 4000,
+      "launchAutoHide": true,
+      "launchFadeOutDuration": 3000,
+      "androidSplashResourceName": "splash",
+      "showSpinner": false,
+      "splashFullScreen": true,
+      "splashImmersive": true
+    }
   }
 }
