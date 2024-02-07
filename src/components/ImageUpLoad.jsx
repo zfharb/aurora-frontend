@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import axios from "axios";
-
-import "./ImageUpLoad.css"
+import bgImage from '/src/images/upload-image-4.jpeg'
 
 function ImageUpLoad() {
     const [file, setFile] = useState('sss')
@@ -88,7 +87,14 @@ function ImageUpLoad() {
 
     return (
         <>  
-        <section class='loader-bg-image'>
+        <div class='container-flex w-100 h-100 position-absolute'>
+        <img class="z-n1 w-100 h-100 position-absolute"
+                src={bgImage} 
+                style={{  
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat'
+                }}
+                 alt="...."/> 
             <div class="container text-left mt-5">
     
                 <div class="row justify-content-center">
@@ -114,7 +120,7 @@ function ImageUpLoad() {
                     </div>
                 </div>
             </div>       
-        </section>
+        </div>
         </>
     )
 }

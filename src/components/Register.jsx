@@ -48,7 +48,7 @@ function Register() {
 
     return (
         <>
-      <div class="container-flex w-100 h-100 ">
+      <div class="container-flex w-100 h-100 position-absolute">
 
         <img class="z-n1 w-100 h-100 position-absolute"
                 src={ocean} 

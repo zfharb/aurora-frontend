@@ -1,8 +1,0 @@
-.loader-bg-image {
-    background-image: url('../images/upload-image-4.jpeg');
-    display:flex;
-    height: 100vh;
-    width: auto;
-    background-repeat:no-repeat;
-    background-size: cover;
-}
