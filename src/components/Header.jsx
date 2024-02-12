@@ -50,12 +50,12 @@ function Header() {
             <li class="nav-item">
               <a class="nav-link text-white fw-bolder" href="#">About</a>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <a class="nav-link text-white fw-bolder" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
+            </li> */}
+            {/* <li class="nav-item">
               <a class="nav-link text-white fw-bolder" href="/ImageUpLoad">my pictures</a>
-            </li>
+            </li> */}
             <li class="nav-item">
               <a class="nav-link text-white fw-bolder" href="#">Pricing</a>
             </li>

@@ -17,7 +17,7 @@ function App() {
     <Routes>
       <Route path="/" element={<><Home/></>}/>
       <Route path="/Home" element={<Home/>}/>
-      <Route path="/ImageUpLoad" element={<ImageUpLoad/>}/>
+      {/* <Route path="/ImageUpLoad" element={<ImageUpLoad/>}/> */}
       <Route path="/login" element={<Login/>}/>
       <Route path="/register" element={<Register/>}/>
       <Route path="*" element={<NotFound/>}/>
